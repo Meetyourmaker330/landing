@@ -1,0 +1,75 @@
+//main: ../style.less
+
+.testimonials{
+   background-color: #000000;
+   padding-left: 72px;
+   padding-right: 72px;
+   padding-bottom: 120px;
+
+   .testimonialsTitle{
+      color: @whiteColor;
+      margin-bottom: 24px;
+   }
+   .testimonialsText{
+      margin-bottom: 40px;
+   }
+   .testimonialsBtn{
+         width: 200px;
+         height: 24px;
+         color: @whiteColor;
+         outline: none;
+         border: none;
+         border-bottom: 2px solid @whiteColor;
+         background: transparent;
+         text-transform: capitalize;
+         &:hover{
+            background-color: @purpleColor;
+            color: @whiteColor;
+         }
+      }
+
+    .myFirstCard{
+       background: url(./images/image7.jpg) no-repeat;
+       position: top;
+       height: 750px;
+       border: 1px solid @lightGray;
+       margin-bottom: 120px;
+       color: @whiteColor;
+       padding-bottom: 20px;
+    }
+    .mySecondCard{
+      background: url(./images/image8.jpg) no-repeat;
+      position: top;
+      overflow: hidden;
+      width: 636px;
+      height: 750px;
+      border: 1px solid @lightGray;
+      margin-bottom: 120px;
+      color: @whiteColor;
+      padding-bottom: 20px;
+   }
+   .myThirdCard{
+      background: url(./images/image9.jpg) no-repeat;
+      position: top;
+      overflow: hidden;
+      width: 636px;
+      height: 750px;
+      border: 1px solid @lightGray;
+      margin-bottom: 120px;
+      color: @whiteColor;
+      padding-bottom: 20px;
+   }
+
+
+       .myCardText{
+          font-size: @cardTitleFz;
+          font-weight: 700;
+       }
+       .nameCard{
+          display: block;
+          font-size: @primaryText;
+          font-weight: 400;
+          color: @lightGray;
+       }
+
+}

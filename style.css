@@ -1,0 +1,915 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Sen', sans-serif;
+  background: black;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h2 {
+  font-weight: 700;
+  font-size: 55px;
+}
+.secondaryText {
+  display: block;
+  color: #8491A0;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+header {
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: #181823;
+  background: linear-gradient(90deg, #000000 40%, #181823 1%);
+}
+header .wrapHeader {
+  padding-left: 72px;
+  padding-right: 72px;
+  margin-bottom: 50px;
+}
+header ul,
+header li {
+  padding: 0px 0px 0px 0px;
+  list-style: none;
+}
+header .logo {
+  padding-top: 32px;
+}
+header .linkItem {
+  display: block;
+  width: 120px;
+  height: 88px;
+  padding-top: 32px;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 400;
+  text-decoration: none;
+}
+header .linkItem:hover {
+  background-color: #5221E6;
+}
+header .burger {
+  position: relative;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+header .burger:hover {
+  border: 1px solid #8491A0;
+  border-radius: 4px;
+}
+header .burgerItem {
+  width: 24px;
+  height: 24px;
+  display: block;
+  font-size: 0px;
+}
+header .burgerItem::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 5px;
+  background-color: #8491A0;
+  position: absolute;
+  bottom: 0;
+  bottom: 5px;
+  right: 0;
+  right: 3px;
+}
+header .burgerItem::before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: #8491A0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  top: 5px;
+  right: 3px;
+}
+header .boxContent {
+  padding-bottom: 84px;
+}
+header .titleHero {
+  left: -70px;
+  top: -200px;
+  margin-right: 35px;
+}
+header .titleHero h1 {
+  font-size: 75px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+header .titleHero h1 .grayText {
+  color: #8491A0;
+}
+header .titleHero .textHero {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+}
+.workSection {
+  background-color: #000000;
+  padding-top: 110px;
+  padding-bottom: 120px;
+  padding-left: 72px;
+}
+.workSection .workText {
+  color: #8491A0;
+  text-transform: uppercase;
+}
+.workSection .secondaryTitle {
+  color: #ffffff;
+}
+.workSection .frameWrap {
+  margin-top: 40px;
+}
+.workSection .frameWrap .frameNumber {
+  display: block;
+  color: #8491A0;
+  font-size: 100px;
+  font-weight: 400;
+}
+.workSection .frameWrap .frameTitle {
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 22px;
+}
+.workSection .frameWrap .frameTitle .green {
+  color: #3cc74e;
+}
+.workSection .frameWrap .frameTitle .blue {
+  color: #609bff;
+}
+.workSection .frameWrap .frameTitle .pink {
+  color: #e95d90;
+}
+.workSection .frameWrap .frameText {
+  display: block;
+  color: #8491A0;
+  font-weight: 400;
+  font-size: 16px;
+}
+.values {
+  height: 600px;
+}
+.values .wrapValuesBlock {
+  height: 100%;
+  padding-top: 120px;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-bottom: 124px;
+  background-color: #FFF3E4;
+}
+.values .valuesTitle {
+  margin-bottom: 24px;
+}
+.values .valuesText {
+  margin-bottom: 134px;
+}
+.values .btnAboutMe {
+  width: 140px;
+  height: 24px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #8491A0;
+  background: transparent;
+  text-transform: capitalize;
+}
+.values .btnAboutMe:hover {
+  background-color: #5221E6;
+  color: #ffffff;
+}
+.skillSet {
+  padding-top: 120px;
+  padding-left: 72px;
+  padding-right: 120px;
+  background-color: #000000;
+  padding-bottom: 120px;
+}
+.skillSet .skillTitle {
+  color: #ffffff;
+}
+.skillSet .skillFrameWrap {
+  margin-bottom: 50px;
+}
+.skillSet .iconFrame {
+  display: block;
+  margin-bottom: 24px;
+}
+.skillSet .skillFrameTitle {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+.heroProject {
+  background-color: #000000;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-top: 120px;
+  padding-bottom: 153px;
+}
+.heroProject .myProject {
+  display: block;
+  color: #8491A0;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.heroProject .projectTitle {
+  color: #ffffff;
+  margin-bottom: 80px;
+}
+.heroProject .card {
+  background-color: #181823;
+  height: 830px;
+  padding-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.heroProject .card .cardImage {
+  width: 100%;
+  max-height: 620px;
+}
+.heroProject .card h5 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 13px;
+}
+.heroProject .card .cardText {
+  font-size: 18px;
+  color: #8491A0;
+  font-weight: 400;
+}
+.heroProject .viewProject {
+  display: block;
+  margin: 0 auto;
+  width: 247px;
+  height: 75px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  outline: none;
+  text-transform: uppercase;
+  border: 1px solid #481DC9;
+  background: transparent;
+  margin-top: 70px;
+}
+.heroProject .viewProject:hover {
+  background-color: #481DC9;
+}
+.instagramSection {
+  height: 600px;
+}
+.instagramSection .wrapInstagramBlock {
+  height: 100%;
+  padding-top: 120px;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-bottom: 124px;
+  background-color: #FBE4FF;
+}
+.instagramSection .instagramTitle {
+  margin-bottom: 24px;
+}
+.instagramSection .instagramText {
+  color: #181823;
+  margin-bottom: 134px;
+}
+.instagramSection .btnAboutMe {
+  width: 140px;
+  height: 24px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #8491A0;
+  background: transparent;
+  text-transform: capitalize;
+}
+.instagramSection .btnAboutMe:hover {
+  background-color: #5221E6;
+  color: #ffffff;
+}
+.dribble {
+  padding-top: 120px;
+  background-color: #000000;
+  padding-bottom: 240px;
+  padding-left: 182px;
+  padding-right: 182px;
+  /* Точки (булиты) */
+  /* Элемент точки */
+}
+.dribble .headingDribble {
+  margin-bottom: 124px;
+}
+.dribble .dribbleTitle {
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.dribble .headingText {
+  margin-bottom: 40px;
+}
+.dribble .headingBtn {
+  width: 200px;
+  height: 24px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  background: transparent;
+  text-transform: capitalize;
+}
+.dribble .headingBtn:hover {
+  background-color: #5221E6;
+  color: #ffffff;
+}
+.dribble .slick-list {
+  overflow: hidden;
+}
+.dribble .slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+.dribble .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.dribble .slick-dots li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0px 10px;
+}
+.dribble .slick-dots li button {
+  border: none;
+  outline: none;
+  font-size: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.testimonials {
+  background-color: #000000;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-bottom: 120px;
+}
+.testimonials .testimonialsTitle {
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.testimonials .testimonialsText {
+  margin-bottom: 40px;
+}
+.testimonials .testimonialsBtn {
+  width: 200px;
+  height: 24px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  background: transparent;
+  text-transform: capitalize;
+}
+.testimonials .testimonialsBtn:hover {
+  background-color: #5221E6;
+  color: #ffffff;
+}
+.testimonials .myFirstCard {
+  background: url(images/image7.jpg) no-repeat;
+  position: top;
+  height: 750px;
+  border: 1px solid #8491A0;
+  margin-bottom: 120px;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+.testimonials .mySecondCard {
+  background: url(images/image8.jpg) no-repeat;
+  position: top;
+  overflow: hidden;
+  width: 636px;
+  height: 750px;
+  border: 1px solid #8491A0;
+  margin-bottom: 120px;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+.testimonials .myThirdCard {
+  background: url(images/image9.jpg) no-repeat;
+  position: top;
+  overflow: hidden;
+  width: 636px;
+  height: 750px;
+  border: 1px solid #8491A0;
+  margin-bottom: 120px;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+.testimonials .myCardText {
+  font-size: 22px;
+  font-weight: 700;
+}
+.testimonials .nameCard {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  color: #8491A0;
+}
+.photography {
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: #000000;
+}
+.photography .photographyTitle {
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.photography .photographyText {
+  margin-bottom: 64px;
+}
+.photography .wrapBtnPhotography {
+  margin-bottom: 40px;
+}
+.photography .wrapBtnPhotography .btnPhotography {
+  width: 120px;
+  height: 51px;
+  background: transparent;
+  border: 1px solid #481DC9;
+  color: #ffffff;
+  padding: 12px, 16px, 12px, 16px;
+  font-size: 18px;
+  font-weight: 700;
+  outline: none;
+}
+.photography .wrapBtnPhotography .btnPhotography:hover {
+  background-color: #5221E6;
+}
+.started {
+  background-color: #000000;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.started .startedTitle {
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.started .wrapForm {
+  display: block;
+  width: 526px;
+  height: 500px;
+}
+.started .wrapForm .input {
+  display: block;
+  width: 526px;
+  height: 50px;
+  background-color: #181823;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding-left: 15px;
+}
+.started .wrapForm .message {
+  width: 526px;
+  height: 100px;
+  padding-bottom: 50px;
+  background-color: #181823;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding-left: 15px;
+}
+.started .wrapForm .btnStarted {
+  display: block;
+  width: 526px;
+  height: 75px;
+  border: 1px solid #481DC9;
+  background: transparent;
+  color: #ffffff;
+  outline: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+.started .wrapForm .btnStarted:hover {
+  background-color: #5221E6;
+}
+.footer {
+  background-color: #181823;
+  padding-left: 72px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.footer .socialBlock {
+  margin-top: 35px;
+  width: 100px;
+  cursor: pointer;
+}
+.footer .listItem {
+  list-style: none;
+  display: block;
+  margin-bottom: 20px;
+}
+.footer .listLink {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.footer .listLink:hover {
+  color: #5221E6;
+}
+@media (max-width: 1440px) {
+  .burger {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    background: #000000;
+    width: 100%;
+  }
+  .wrapHeader {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+  .burger {
+    display: none;
+  }
+  .hero {
+    display: none;
+  }
+  .photoHero {
+    background: url(images/hero2.jpg);
+    width: 384px;
+    height: 650px;
+  }
+  h1 {
+    font-size: 50px !important;
+  }
+  .workSection {
+    padding-left: 40px;
+  }
+  .ball {
+    display: none;
+  }
+  .pic {
+    background: url(images/img1.jpg) no-repeat;
+    background-size: cover;
+  }
+  .valuesText {
+    margin-bottom: 60px !important;
+  }
+  .wrapValuesBlock {
+    padding-top: 80px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+  .skillSet {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .wrapContainer {
+    margin-bottom: 50px !important;
+  }
+  .heroProject {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .viewProject {
+    display: none !important;
+  }
+  .cardImage {
+    position: static !important;
+    width: 100% !important;
+    margin-bottom: 40px;
+  }
+  .wrapInstagramBlock {
+    padding-top: 80px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+  .fly {
+    display: none;
+  }
+  .picFly {
+    background: url(images/img2.jpg) no-repeat;
+    background-size: cover;
+  }
+  .dribble {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .testimonials {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 120px;
+  }
+  .myFirstCard {
+    background: url(images/imgtest1.jpg) no-repeat;
+    position: top;
+    overflow: hidden;
+    max-width: 332px;
+    max-height: 870px;
+    border: 1px solid #8491A0;
+    margin-bottom: 64px;
+    color: #ffffff;
+    padding-bottom: 20px;
+  }
+  .mySecondCard {
+    background: url(images/imgtest2.jpg) no-repeat;
+    position: top;
+    overflow: hidden;
+    max-width: 332px;
+    max-height: 870px;
+    border: 1px solid #8491A0;
+    margin-bottom: 64px;
+    color: #ffffff;
+    padding-bottom: 20px;
+  }
+  .myThirdCard {
+    background: url(images/imgtest3.jpg) no-repeat;
+    position: top;
+    overflow: hidden;
+    max-width: 332px;
+    max-height: 870px;
+    border: 1px solid #8491A0;
+    margin-bottom: 64px;
+    color: #ffffff;
+    padding-bottom: 20px;
+  }
+  .photography {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .photographyText {
+    display: inline-block;
+  }
+  .carry {
+    display: none;
+  }
+  .imgBlock {
+    margin-bottom: 24px;
+  }
+  .started {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .wrapForm {
+    display: block;
+    width: 332px !important;
+    height: 491px !important;
+  }
+  .input {
+    display: block;
+    width: 332px !important;
+    height: 50px;
+  }
+  .message {
+    width: 332px !important;
+  }
+  .btnStarted {
+    display: block;
+    width: 332px !important;
+    height: 75px;
+  }
+  .footer {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 56px;
+  }
+}
+@media (max-width: 450px) {
+  .wrapHeader {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .navMenu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background-color: #000000;
+    border: 1px solid #8491A0;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  .navMenu .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .navMenu .menu .linkItem {
+    width: 100px;
+    height: 50px;
+    font-size: 12px;
+    padding-top: 15px;
+    font-weight: bold;
+  }
+  .navMenu.show {
+    display: block;
+  }
+  .logo {
+    display: flex;
+    justify-content: space-between;
+  }
+  .burger {
+    display: block;
+  }
+  .hero {
+    display: none;
+  }
+  .photoHero {
+    background: url(images/hero3.jpg) no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 288px;
+    margin-bottom: 42px;
+  }
+  .titleHero {
+    position: static !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    width: 100% !important;
+  }
+  h1 {
+    font-size: 32px !important;
+  }
+  .workSection {
+    padding-bottom: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  .workTitleBlock {
+    width: 100% !important;
+  }
+  .values {
+    height: 100%;
+  }
+  .wrapValuesBlock {
+    max-height: 450px;
+    padding-top: 48px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .ball {
+    display: none !important;
+  }
+  .pic {
+    height: 450px !important;
+    background: url(images/mobileimg1.jpg) no-repeat;
+    background-size: cover;
+  }
+  .skillSet {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+  }
+  .skillFrameWrap {
+    margin-bottom: 20px;
+  }
+  .marginMobile {
+    margin-bottom: 20px;
+  }
+  .heroProject {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .card {
+    max-height: 660px;
+  }
+  .cardTitle {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .cardText {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .instagramSection {
+    height: 100%;
+  }
+  .wrapInstagramBlock {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px !important;
+  }
+  .instagramText {
+    margin-bottom: 50px !important;
+  }
+  .fly {
+    display: none;
+  }
+  .picFly {
+    height: 450px !important;
+    background: url(images/mobileimg1.jpg) no-repeat;
+    background-size: cover;
+  }
+  .dribble {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+  }
+  .testimonials {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+  .headingTestimonials {
+    padding-bottom: 50px;
+  }
+  .myFirstCard {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .mySecondCard {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .myThirdCard {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .myCardText {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .nameCard {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .photography {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+  }
+  .wrapBtnPhotography {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .btnPhotography {
+    width: 148px !important;
+    margin-right: 24px;
+    margin-bottom: 24px;
+  }
+  .wrapImgCountries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .widthCountries {
+    width: 100%;
+  }
+  .started {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+  }
+  .headingStarted {
+    padding-left: 20px;
+  }
+  .wrapForm {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .columnList {
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px !important;
+    margin-top: 20px !important;
+  }
+}

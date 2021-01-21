@@ -1,0 +1,107 @@
+//main: ../style.less
+  
+header{
+   padding-left: 0px;
+   padding-right: 0px;
+   background-color: @darkGray;
+   background: linear-gradient(90deg, #000000 40%,#181823 1%);
+
+.wrapHeader{
+   padding-left: 72px;
+   padding-right: 72px;
+   margin-bottom: 50px;
+}   
+
+ul,li{
+  padding: 0px 0px 0px 0px;
+  list-style: none;
+}
+
+.logo{
+   padding-top: 32px;
+}
+.linkItem{
+   display: block;
+   width: 120px;
+   height: 88px;
+   padding-top: 32px;
+   color: @whiteColor;
+   font-size: @secondaryText;
+   text-transform: capitalize;
+   font-weight: 400;
+   text-decoration: none;
+   &:hover{
+      background-color: @purpleColor;
+   }
+}
+
+// burger
+.burger{
+   position: relative;
+   background: transparent;
+   outline: none;
+   border: none;
+   &:hover{
+      border: 1px solid @lightGray;
+      border-radius: 4px;
+   }
+}
+.burgerItem{
+   width: 24px;
+   height: 24px;
+   display: block;
+   font-size: 0px;
+}
+.burgerItem::after{
+   content: '';
+   display: block;
+   width: 20px;
+   height: 5px;
+   background-color: @lightGray;
+   position: absolute;
+   bottom: 0;
+   bottom: 5px;
+   right: 0;
+   right: 3px;
+}
+.burgerItem::before{
+   content: '';
+   display: block;
+   width: 30px;
+   height: 5px;
+   background-color: @lightGray;
+   position: absolute;
+   top: 0;
+   right: 0;
+   top: 5px;
+   right: 3px;
+}
+// burger
+.boxContent{
+   padding-bottom: 84px;
+}
+.titleHero{
+   left: -70px;
+   top: -200px;
+   margin-right: 35px;
+   h1{
+      font-size: @primatyFz;
+      color: @whiteColor;
+      font-weight: 700;
+      margin-bottom: 32px;
+      .grayText{
+         color: @lightGray;
+      }
+   }
+   
+   .textHero{
+      color: @whiteColor;
+      font-weight: 400;
+      font-size: @primaryText;
+   }
+}
+
+
+
+}
+

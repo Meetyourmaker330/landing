@@ -1,0 +1,65 @@
+//main: ../style.less
+
+.heroProject{
+   background-color: #000000;
+   padding-left: 72px;
+   padding-right: 72px;
+   padding-top: 120px;
+   padding-bottom: 153px;
+   .myProject{
+      display: block;
+      color: @lightGray;
+      font-size: @secondaryText;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+   }
+   .projectTitle{
+      color: @whiteColor;
+      margin-bottom: 80px;
+   }
+
+   .card{
+      background-color: @darkGray;
+      height: 830px;
+      padding-bottom: 40px;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 24px;
+      .cardImage{
+        width: 100%;
+        max-height: 620px;
+      }
+      h5{
+         color: @whiteColor;
+         font-size: @cardTitleFz;
+         font-weight: 700;
+         text-transform: capitalize;
+         margin-bottom: 13px;
+      }
+      .cardText{
+         font-size: @primaryText;
+         color: @lightGray;
+         font-weight: 400;
+      }
+   }
+
+   .viewProject{
+      display: block;
+      margin: 0 auto;
+      width: 247px;
+      height: 75px;
+      color: @whiteColor;
+      font-size: @primaryText;
+      font-weight: 700;
+      outline: none;
+      text-transform: uppercase;
+      border: 1px solid #481DC9;
+      background: transparent;
+      margin-top: 70px;
+      &:hover{
+         background-color: #481DC9;
+      }
+   }
+
+}
